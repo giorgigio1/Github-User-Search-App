@@ -1,6 +1,6 @@
 import { Button } from "./Button";
 import { Input } from "./Input";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { ThemeContext } from "../App";
 import axios from "axios";
 
