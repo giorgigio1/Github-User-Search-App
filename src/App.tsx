@@ -8,19 +8,28 @@ import InfoSection from "./components/InfoSection";
 type ThemeContextType = {
   theme: string;
   toggleTheme: () => void;
+  data: any;
+  setData: any;
+}
+
+interface MyData {
+  id?: number;
+  name?: string;
+  bio?: string;
 }
 
 export const ThemeContext = createContext<ThemeContextType | null>(null);
 
 export default function App() {
   const [theme, setTheme] = useState<string>("light");
+  const [data, setData] = useState<any>(null);
 
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"));
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme, data, setData }}>
       <div className="wrapper" id={theme}>
         <div className="main">
           <Header />

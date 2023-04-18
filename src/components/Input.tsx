@@ -5,8 +5,10 @@ type Props = {
   placeholder: string;
   style?: React.CSSProperties;
   id?: string;
+  onChange?: any;
+  value?: string;
 };
 
-export const Input: React.FC<Props> = ({ type, placeholder, style, id }) => {
-  return <input type={type} placeholder={placeholder} style={style} id={id} />;
+export const Input: React.FC<Props> = ({ type, placeholder, style, id, onChange }) => {
+  return <input type={type} placeholder={placeholder} style={style} id={id} onChange={onChange} />;
 };

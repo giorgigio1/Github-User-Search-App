@@ -54,7 +54,7 @@ header {
   margin-right: 20px;
   stroke: white;
   fill: red;
-} 
+}
 header figure {
   display: flex;
   align-items: flex-start;
@@ -104,6 +104,18 @@ header figure span {
   font-size: 17px;
   cursor: pointer;
 }
+.searchSection span {
+  position: absolute;
+  right: 143px;
+  bottom: 53px;
+  color: #f74646;
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 17px;
+}
+#dark .searchSection span {
+  color: #f74646;
+}
 .infoSection {
   background-color: #fefefe;
   border-radius: 15px;
@@ -127,6 +139,8 @@ header figure span {
 }
 .top figure img {
   border-radius: 100%;
+  width: 117px;
+  height: 117px;
 }
 .rightSide {
   width: 77%;
@@ -185,6 +199,9 @@ header figure span {
 }
 .twitterCompany figure span {
   margin-left: 20px;
+}
+figure span {
+  color: #4b6a9b;
 }
 p,
 span {

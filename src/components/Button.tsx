@@ -1,5 +1,5 @@
 type Props = {
-  onClick: () => void;
+  onClick: any;
   style?: React.CSSProperties;
   children: React.ReactNode;
 };
