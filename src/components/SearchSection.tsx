@@ -4,15 +4,9 @@ import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../App";
 import axios from "axios";
 
-interface MyData {
-  id: number;
-  name: string;
-}
-
 const SearchSection = () => {
   const context = useContext(ThemeContext);
   const [user, setUser] = useState(null);
-//   console.log(user);
 
   const handleChange = (e: any) => {
     setUser(e.target.value);
@@ -20,11 +14,11 @@ const SearchSection = () => {
 
   const handleNoResult = () => {
     if (context?.data?.name) {
-        return 
-      }
-      if (context?.data) {
-        return "No results";
-      }
+      return;
+    }
+    if (context?.data) {
+      return "No results";
+    }
   };
 
   const handleRequest = () => {

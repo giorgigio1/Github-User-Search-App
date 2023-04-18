@@ -79,7 +79,10 @@ const InfoSection = () => {
   };
 
   const handleTwitter = () => {
-    if (context?.data?.twitter_username === undefined || context?.data?.twitter_username === null) {
+    if (
+      context?.data?.twitter_username === undefined ||
+      context?.data?.twitter_username === null
+    ) {
       return "Not Available";
     }
     return context?.data?.twitter_username;

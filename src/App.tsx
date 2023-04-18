@@ -10,13 +10,7 @@ type ThemeContextType = {
   toggleTheme: () => void;
   data: any;
   setData: any;
-}
-
-interface MyData {
-  id?: number;
-  name?: string;
-  bio?: string;
-}
+};
 
 export const ThemeContext = createContext<ThemeContextType | null>(null);
 

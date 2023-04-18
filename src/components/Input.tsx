@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 type Props = {
   type: string;
@@ -9,6 +9,20 @@ type Props = {
   value?: string;
 };
 
-export const Input: React.FC<Props> = ({ type, placeholder, style, id, onChange }) => {
-  return <input type={type} placeholder={placeholder} style={style} id={id} onChange={onChange} />;
+export const Input: React.FC<Props> = ({
+  type,
+  placeholder,
+  style,
+  id,
+  onChange,
+}) => {
+  return (
+    <input
+      type={type}
+      placeholder={placeholder}
+      style={style}
+      id={id}
+      onChange={onChange}
+    />
+  );
 };
